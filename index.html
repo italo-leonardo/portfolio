@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <meta name="description" content="Portfólio profissional - Desenvolvedor Web Full Stack especializado em criar soluções digitais inovadoras">
+    <meta name="keywords" content="desenvolvedor, web, portfolio, programação, frontend, backend">
+    <meta name="author" content="Seu Nome">
+    <title>Portfólio | Desenvolvedor Full Stack</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#experience" class="nav-link">Experiência</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Italo Leonardo</h1>
+                    <h2>Desenvolvedor Full Stack</h2>
+                    <p>Transformando ideias em soluções digitais inovadoras com código limpo e design intuitivo</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Mim</h2>
+                <p>Conheça minha jornada e habilidades</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Olá, eu sou um Desenvolvedor Apaixonado!</h3>
+                    <p>
+                        Com mais de 5 anos de experiência em desenvolvimento web, especializo-me em criar aplicações 
+                        robustas e escaláveis que combinam performance excepcional com interfaces intuitivas. Minha 
+                        jornada no mundo da programação começou com a curiosidade sobre como as coisas funcionam na 
+                        internet, e hoje transformo essa paixão em soluções que impactam positivamente os negócios.
+                    </p>
+                    <p>
+                        Acredito que a tecnologia deve ser acessível e resolver problemas reais. Por isso, foco em 
+                        desenvolver aplicações que não apenas funcionam perfeitamente, mas também proporcionam uma 
+                        experiência memorável aos usuários. Estou sempre em busca de novos desafios e oportunidades 
+                        para expandir meus conhecimentos e contribuir com projetos inovadores.
+                    </p>
+                    
+                    <div class="skills">
+                        <h4>Objetivos Profissionais</h4>
+                        <p>Busco oportunidades para liderar projetos desafiadores, contribuir com equipes de alta performance 
+                        e continuar aprendendo tecnologias emergentes como IA e Web3.</p>
+                        
+                        <h4>Habilidades Técnicas</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Frontend Development</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Backend Development</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>UI/UX Design</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>DevOps</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projetos</h2>
+                <p>Explore meus trabalhos recentes</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all')">Todos</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+                <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
+                <button class="filter-btn" onclick="filterProjects('design')">Design</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web" onclick="openModal('project1')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">Plataforma completa de e-commerce com sistema de pagamento integrado</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="mobile" onclick="openModal('project2')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">App de Gestão Financeira</h3>
+                        <p class="project-description">Aplicativo mobile para controle de finanças pessoais com IA</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">AI/ML</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web" onclick="openModal('project3')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">Dashboard interativo para visualização de dados em tempo real</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="design" onclick="openModal('project4')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Redesign UI/UX</h3>
+                        <p class="project-description">Redesign completo de interface para startup de tecnologia</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">Prototyping</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web" onclick="openModal('project5')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Reservas</h3>
+                        <p class="project-description">Sistema completo de reservas online para restaurantes</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="mobile" onclick="openModal('project6')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Network App</h3>
+                        <p class="project-description">Rede social focada em compartilhamento de conhecimento</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">GraphQL</span>
+                            <span class="project-tag">AWS</span>
+                        </div>
+                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experiência & Eventos</h2>
+                <p>Minha trajetória profissional</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Presente</div>
+                        <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                        <p>Liderando equipe de desenvolvimento em projetos de alta complexidade, implementando arquiteturas escaláveis e mentorando desenvolvedores júniors.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Palestrante - DevConf 2023</h3>
+                        <p>Apresentação sobre "Microserviços e Arquitetura Serverless" para mais de 500 participantes no maior evento de desenvolvimento do país.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p>Desenvolvimento de aplicações web complexas utilizando React, Node.js e cloud services. Aumento de 40% na performance das aplicações.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3 class="timeline-title">Hackathon Winner - Tech Challenge</h3>
+                        <p>Primeiro lugar no hackathon nacional com solução inovadora para logística urbana usando IA e análise preditiva.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p>Início da carreira profissional desenvolvendo features para aplicações web e mobile, com foco em qualidade de código e boas práticas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contato</h2>
+                <p>Vamos conversar sobre seu próximo projeto</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@seuportfolio.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (88) 99999-9999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Crato, Ceará, Brasil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐙</a>
+                        <a href="#" class="social-link">📷</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2024 Seu Portfolio. Todos os direitos reservados.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Política de Privacidade</a></li>
+                    <li><a href="#terms">Termos de Uso</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" onclick="scrollToTop()">↑</div>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">Detalhes do Projeto</div>
+                <h2 id="modalTitle">Título do Projeto</h2>
+                <p id="modalDescription">Descrição detalhada do projeto...</p>
+                <h3>Tecnologias Utilizadas</h3>
+                <div id="modalTags" class="project-tags"></div>
+                <h3>Desafios e Soluções</h3>
+                <p>Durante o desenvolvimento deste projeto, enfrentei diversos desafios técnicos que me permitiram 
+                aprender e crescer como desenvolvedor. A implementação de funcionalidades complexas exigiu pesquisa 
+                aprofundada e colaboração com a equipe.</p>
+                <h3>Resultados</h3>
+                <ul>
+                    <li>Aumento de 50% na eficiência operacional</li>
+                    <li>Redução de 30% no tempo de processamento</li>
+                    <li>Melhoria significativa na experiência do usuário</li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="#" class="btn btn-primary">Ver Projeto Online</a>
+                    <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Ver Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <p id="notificationMessage"></p>
+    </div>
+</body>
+</html>
