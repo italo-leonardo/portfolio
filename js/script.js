@@ -109,10 +109,8 @@ function openModal(projectId) {
     // Project data (in a real application, this would come from a database)
     const projectData = {
         project1: {
-            title: 'E-commerce Platform',
-            description: 'Plataforma completa de e-commerce desenvolvida com React e Node.js, ' +
-                        'incluindo sistema de pagamento integrado, gestão de estoque em tempo real, ' +
-                        'e painel administrativo completo. O projeto atende mais de 10.000 usuários ativos mensalmente.'
+            title: 'Parcelamento SELIC API',
+            description: 'Simulador de parcelamento com juros calculados com base na taxa SELIC. Esta API expõe um endpoint para simular compras parceladas, aplicando juros compostos em casos com mais de 6 parcelas.'
         },
         project2: {
             title: 'App de Gestão Financeira',
