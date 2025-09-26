@@ -107,42 +107,42 @@ function openModal(projectId) {
     const modalDescription = document.getElementById('modalDescription');
     
     // Project data (in a real application, this would come from a database)
-    const projectData = {
-        project1: {
-            title: 'Parcelamento SELIC API',
-            description: 'Simulador de parcelamento com juros calculados com base na taxa SELIC. Esta API expõe um endpoint para simular compras parceladas, aplicando juros compostos em casos com mais de 6 parcelas.'
-        },
-        project2: {
-            title: 'App de Gestão Financeira',
-            description: 'Aplicativo mobile inovador que utiliza inteligência artificial para ' +
-                        'categorizar automaticamente despesas e fornecer insights personalizados ' +
-                        'sobre hábitos de consumo. Inclui previsões de gastos e sugestões de economia.'
-        },
-        project3: {
-            title: 'Dashboard Analytics',
-            description: 'Dashboard interativo para visualização de dados complexos em tempo real. ' +
-                        'Utiliza D3.js para criar gráficos dinâmicos e Vue.js para uma interface ' +
-                        'responsiva. Processa mais de 1 milhão de dados por dia.'
-        },
-        project4: {
-            title: 'Redesign UI/UX',
-            description: 'Redesign completo da interface de uma startup de tecnologia, resultando ' +
-                        'em aumento de 200% na conversão e redução de 60% na taxa de abandono. ' +
-                        'Projeto incluiu pesquisa com usuários e testes A/B.'
-        },
-        project5: {
-            title: 'Sistema de Reservas',
-            description: 'Sistema robusto de reservas online para rede de restaurantes, com ' +
-                        'integração com sistemas de ponto de venda, gestão de mesas em tempo real ' +
-                        'e sistema de notificações automatizadas.'
-        },
-        project6: {
-            title: 'Social Network App',
-            description: 'Rede social focada em compartilhamento de conhecimento técnico, com ' +
-                        'features como code sharing, live coding sessions e sistema de mentoria. ' +
-                        'Mais de 50.000 desenvolvedores cadastrados.'
-        }
-    };
+    // const projectData = {
+    //     project1: {
+    //         title: 'Parcelamento SELIC API',
+    //         description: 'Simulador de parcelamento com juros calculados com base na taxa SELIC. Esta API expõe um endpoint para simular compras parceladas, aplicando juros compostos em casos com mais de 6 parcelas.'
+    //     },
+    //     project2: {
+    //         title: 'App de Gestão Financeira',
+    //         description: 'Aplicativo mobile inovador que utiliza inteligência artificial para ' +
+    //                     'categorizar automaticamente despesas e fornecer insights personalizados ' +
+    //                     'sobre hábitos de consumo. Inclui previsões de gastos e sugestões de economia.'
+    //     },
+    //     project3: {
+    //         title: 'Dashboard Analytics',
+    //         description: 'Dashboard interativo para visualização de dados complexos em tempo real. ' +
+    //                     'Utiliza D3.js para criar gráficos dinâmicos e Vue.js para uma interface ' +
+    //                     'responsiva. Processa mais de 1 milhão de dados por dia.'
+    //     },
+    //     project4: {
+    //         title: 'Redesign UI/UX',
+    //         description: 'Redesign completo da interface de uma startup de tecnologia, resultando ' +
+    //                     'em aumento de 200% na conversão e redução de 60% na taxa de abandono. ' +
+    //                     'Projeto incluiu pesquisa com usuários e testes A/B.'
+    //     },
+    //     project5: {
+    //         title: 'Sistema de Reservas',
+    //         description: 'Sistema robusto de reservas online para rede de restaurantes, com ' +
+    //                     'integração com sistemas de ponto de venda, gestão de mesas em tempo real ' +
+    //                     'e sistema de notificações automatizadas.'
+    //     },
+    //     project6: {
+    //         title: 'Social Network App',
+    //         description: 'Rede social focada em compartilhamento de conhecimento técnico, com ' +
+    //                     'features como code sharing, live coding sessions e sistema de mentoria. ' +
+    //                     'Mais de 50.000 desenvolvedores cadastrados.'
+    //     }
+    // };
     
     const data = projectData[projectId];
     if (data) {

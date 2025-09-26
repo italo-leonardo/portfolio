@@ -157,14 +157,14 @@
             
             <div class="filter-buttons">
                 <button class="filter-btn active" onclick="filterProjects('all')">Todos</button>
+                <button class="filter-btn" onclick="filterProjects('dashboard')">Dashboard</button>
+                <button class="filter-btn" onclick="filterProjects('backend')">Backend</button>
                 <button class="filter-btn" onclick="filterProjects('web')">Web</button>
-                <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
-                <button class="filter-btn" onclick="filterProjects('design')">Design</button>
             </div>
             
             <div class="projects-grid" id="projectsGrid">
                 <!-- Project 1 -->
-                <div class="project-card" data-category="web" onclick="openModal('project1')">
+                <div class="project-card" data-category="backend" onclick="openModal('project1')">
                     <div class="project-image">
                         <img src="css/img/Gemini_Generated_Image_37nrp637nrp637nr.png" alt="Projeto API">
                     </div>
@@ -181,8 +181,10 @@
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="project-card" data-category="mobile" onclick="openModal('project2')">
-                    <div class="project-image"></div>
+                <div class="project-card" data-category="backend" onclick="openModal('project2')">
+                    <div class="project-image">
+                        <img src="css/img/Gemini_Generated_Image_8gbwjy8gbwjy8gbw.png" alt="Projeto Bot WhatsApp">
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">Bot-mensageiro-whatsapp</h3>
                         <p class="project-description">Bot automatizado para envio de mensagens no WhatsApp usando Python. Utiliza pywhatkit e pyautogui, com log de erros, pausas automáticas e interação com o WhatsApp Web.</p>
@@ -196,62 +198,76 @@
                 </div>
                 
                 <!-- Project 3 -->
-                <div class="project-card" data-category="web" onclick="openModal('project3')">
-                    <div class="project-image"></div>
+                <div class="project-card" data-category="dashboard" onclick="openModal('project3')">
+                    <div class="project-image">
+                        <img src="css/img/WhatsApp Image 2025-09-26 at 18.13.30.jpeg" alt="Projeto Dashboard Gasolina">
+                    </div>
                     <div class="project-content">
-                        <h3 class="project-title">Dashboard Analytics</h3>
-                        <p class="project-description">Dashboard interativo para visualização de dados em tempo real</p>
+                        <h3 class="project-title">Dashboard Gasolina: Mapeamento de Preços em Juazeiro</h3>
+                        <p class="project-description">
+                            Este dashboard interativo apresenta uma análise detalhada da variação dos preços da gasolina nos postos de Juazeiro do Norte ao longo de um período de quatro anos (2019-2022). Os dados utilizados para esta análise são públicos e foram obtidos no portal dados.gov.br, garantindo a credibilidade e transparência da informação.
+                        </p>
                         <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">D3.js</span>
-                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Storytelling</span>
+                            <span class="project-tag">ETL</span>
                         </div>
-                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiN2MxMjcxODgtZTFkOS00NWYwLWFhNWMtODE4MzJjMmY5MGNiIiwidCI6ImNhZDZiNmQwLTgyYzUtNDIyNy1hNTRjLTk5NGM0MjQzMjE1NCJ9" target="_blank" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
                     </div>
                 </div>
                 
                 <!-- Project 4 -->
-                <div class="project-card" data-category="design" onclick="openModal('project4')">
-                    <div class="project-image"></div>
+                <div class="project-card" data-category="dashboard" onclick="openModal('project4')">
+                    <div class="project-image">
+                        <img src="css/img/WhatsApp Image 2025-09-26 at 19.11.16.jpeg" alt="Projeto Dashboard Financeira">
+                    </div>
                     <div class="project-content">
-                        <h3 class="project-title">Redesign UI/UX</h3>
-                        <p class="project-description">Redesign completo de interface para startup de tecnologia</p>
+                        <h3 class="project-title">Analytics Financeira: O Raio-X de Receitas e Custos</h3>
+                        <p class="project-description">
+                            Este dashboard financeiro oferece uma visão clara e consolidada da saúde financeira, permitindo o acompanhamento de despesas, receitas e resultados. Os dados são cruciais para a gestão orçamentária e a tomada de decisão.
+                        </p>
                         <div class="project-tags">
                             <span class="project-tag">Figma</span>
-                            <span class="project-tag">UI/UX</span>
-                            <span class="project-tag">Prototyping</span>
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">Power bi</span>
                         </div>
-                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMDM1OTJmYjEtMzNiYy00Y2I3LWFjMTAtMzUzODY2NTFiNjA1IiwidCI6ImNhZDZiNmQwLTgyYzUtNDIyNy1hNTRjLTk5NGM0MjQzMjE1NCJ9" target="_blank" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
                     </div>
                 </div>
                 
                 <!-- Project 5 -->
                 <div class="project-card" data-category="web" onclick="openModal('project5')">
-                    <div class="project-image"></div>
+                    <div class="project-image">
+                        <img src="css/img/Captura de tela de 2025-03-25 22-16-46.png" alt="Projeto Anime Catálogo">
+                    </div>
                     <div class="project-content">
-                        <h3 class="project-title">Sistema de Reservas</h3>
-                        <p class="project-description">Sistema completo de reservas online para restaurantes</p>
+                        <h3 class="project-title">Anime Catálogo</h3>
+                        <p class="project-description">
+                            Catálogo de animes, permitindo criar, listar, atualizar e excluir títulos. Desenvolvida com NestJS, Prisma e SQLite, integrada ao frontend Next.js + TailwindCSS.
+                        </p>
                         <div class="project-tags">
-                            <span class="project-tag">PHP</span>
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">NestJS</span>
+                            <span class="project-tag">SQLite</span>
                         </div>
-                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                        <a href="http://github.com/italo-leonardo/anime-catalog" target="_blank" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
                     </div>
                 </div>
                 
                 <!-- Project 6 -->
-                <div class="project-card" data-category="mobile" onclick="openModal('project6')">
-                    <div class="project-image"></div>
+                <div class="project-card" data-category="web" onclick="openModal('project6')">
+                    <div class="project-image">
+                        <img src="css/img/Imagem colada.png" alt="Projeto Eventos">
+                    </div>
                     <div class="project-content">
-                        <h3 class="project-title">Social Network App</h3>
-                        <p class="project-description">Rede social focada em compartilhamento de conhecimento</p>
+                        <h3 class="project-title">Gerenciamento de eventos</h3>
+                        <p class="project-description">Este projeto consiste na criação de um Portal Web dinâmico e focado em eventos, com o objetivo de centralizar e divulgar as principais festividades e atrações da região do Cariri, no Ceará.Desenvolvido a partir de um esforço de colaboração e utilizando tecnologias web essenciais (HTML, CSS e JavaScript).</p>
                         <div class="project-tags">
-                            <span class="project-tag">Flutter</span>
-                            <span class="project-tag">GraphQL</span>
-                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Colaboração</span>
+                            <span class="project-tag">Web</span>
+                            <span class="project-tag">PHP</span>
                         </div>
-                        <a href="#" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
+                        <a href="https://github.com/ChristianAcacio/Gerenciamento-de-eventos" target="_blank" class="project-link" onclick="event.stopPropagation()">Ver Projeto →</a>
                     </div>
                 </div>
             </div>
