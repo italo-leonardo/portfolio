@@ -14,14 +14,52 @@
     --white: #ffffff;
     --gray-light: #f8f9fa;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Backgrounds & Surfaces */
+    --body-bg: linear-gradient(135deg, var(--bg-color) 0%, rgba(255,255,255,0.95) 100%);
+    --card-bg: var(--white);
+    --text-primary: #256377;
+
+    /* Projects section variables */
+    --projects-bg: linear-gradient(135deg, var(--bg-color), rgba(255,255,255,0.95));
+    --contact-bg: linear-gradient(135deg, var(--bg-color), rgba(255,255,255,0.95));
+    --project-title-color: var(--secondary-color);
+    --project-desc-color: var(--text-color);
+    --project-tag-bg: var(--bg-color);
+    --project-tag-color: #256377;
+    --project-link-color: #256377;
+    --filter-btn-bg: var(--white);
+    --filter-btn-color: var(--text-color);
+    --filter-btn-active-bg: #2c6f85;
+    --filter-btn-active-color: #ffffff;
 }
 
 /* Modo Escuro */
 body.dark-mode {
+    --primary-color: #58b4d1;
+    --secondary-color: #ffffff;
     --bg-color: #1a1a2e;
     --text-color: #eaeaea;
     --gray-light: #16213e;
     --white: #0f3460;
+
+    /* Backgrounds & Surfaces */
+    --body-bg: linear-gradient(135deg, var(--bg-color) 0%, var(--gray-light) 100%);
+    --card-bg: #0f3460;
+    --text-primary: #58b4d1;
+
+    /* Projects section variables */
+    --projects-bg: linear-gradient(135deg, var(--bg-color), var(--gray-light));
+    --contact-bg: linear-gradient(135deg, var(--bg-color), var(--gray-light));
+    --project-title-color: #ffffff;
+    --project-desc-color: #eaeaea;
+    --project-tag-bg: #1a1a2e;
+    --project-tag-color: #58b4d1;
+    --project-link-color: #58b4d1;
+    --filter-btn-bg: #0f3460;
+    --filter-btn-color: #eaeaea;
+    --filter-btn-active-bg: #58b4d1;
+    --filter-btn-active-color: #0f3460;
 }
 
 /* Estilos Base */
@@ -29,7 +67,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, var(--bg-color) 0%, rgba(255,255,255,0.95) 100%);
+    background: var(--body-bg);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -357,7 +395,7 @@ nav {
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--text-primary);
 }
 
 .about-text p {
@@ -435,7 +473,7 @@ nav {
 /* Projects Section */
 #projects {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--bg-color), rgba(255,255,255,0.95));
+    background: var(--projects-bg);
 }
 
 .filter-buttons {
@@ -448,7 +486,8 @@ nav {
 
 .filter-btn {
     padding: 0.5rem 1.5rem;
-    background: white;
+    background: var(--filter-btn-bg);
+    color: var(--filter-btn-color);
     border: 2px solid var(--primary-color);
     border-radius: 25px;
     cursor: pointer;
@@ -458,8 +497,8 @@ nav {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: var(--primary-color);
-    color: white;
+    background: var(--filter-btn-active-bg);
+    color: var(--filter-btn-active-color);
 }
 
 .projects-grid {
@@ -469,7 +508,7 @@ nav {
 }
 
 .project-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -521,13 +560,13 @@ nav {
 .project-title {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+    color: var(--project-title-color);
 }
 
 .project-description {
-    color: var(--text-color);
+    color: var(--project-desc-color);
     margin-bottom: 1rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .project-tags {
@@ -539,15 +578,15 @@ nav {
 
 .project-tag {
     padding: 0.25rem 0.75rem;
-    background: var(--bg-color);
+    background: var(--project-tag-bg);
     border-radius: 15px;
     font-size: 0.85rem;
-    color: var(--primary-color);
+    color: var(--project-tag-color);
     font-weight: 500;
 }
 
 .project-link {
-    color: var(--primary-color);
+    color: var(--project-link-color);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -576,7 +615,7 @@ nav {
 }
 
 .modal-content {
-    background: white;
+    background: var(--card-bg);
     border-radius: 20px;
     max-width: 800px;
     width: 90%;
@@ -598,7 +637,7 @@ nav {
     font-size: 2rem;
     cursor: pointer;
     color: var(--text-color);
-    background: white;
+    background: var(--card-bg);
     border: none;
     width: 40px;
     height: 40px;
@@ -730,7 +769,7 @@ nav {
     position: relative;
     width: 45%;
     padding: 2rem;
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: var(--transition);
@@ -752,7 +791,7 @@ nav {
     height: 20px;
     background: var(--accent-color);
     border-radius: 50%;
-    border: 4px solid white;
+    border: 4px solid var(--card-bg);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -771,7 +810,7 @@ nav {
 
 .timeline-date {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
@@ -784,7 +823,7 @@ nav {
 /* Contact Section */
 #contact {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--bg-color), rgba(255,255,255,0.95));
+    background: var(--contact-bg);
 }
 
 .contact-content {
@@ -796,7 +835,7 @@ nav {
 }
 
 .contact-form {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -820,7 +859,7 @@ nav {
     border-radius: 10px;
     font-size: 1rem;
     transition: var(--transition);
-    background: white;
+    background: var(--card-bg);
     color: var(--text-color);
 }
 
@@ -847,7 +886,7 @@ textarea.form-control {
     gap: 1rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: var(--transition);
@@ -900,7 +939,7 @@ textarea.form-control {
     top: 100px;
     right: 20px;
     padding: 1rem 2rem;
-    background: white;
+    background: var(--card-bg);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transform: translateX(400px);
@@ -985,7 +1024,7 @@ footer {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: white;
+        background: var(--card-bg);
         width: 100%;
         text-align: center;
         transition: 0.3s;
