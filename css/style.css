@@ -19,6 +19,7 @@
     --body-bg: linear-gradient(135deg, var(--bg-color) 0%, rgba(255,255,255,0.95) 100%);
     --card-bg: var(--white);
     --text-primary: #256377;
+    --on-primary: #ffffff;
 
     /* Projects section variables */
     --projects-bg: linear-gradient(135deg, var(--bg-color), rgba(255,255,255,0.95));
@@ -47,6 +48,7 @@ body.dark-mode {
     --body-bg: linear-gradient(135deg, var(--bg-color) 0%, var(--gray-light) 100%);
     --card-bg: #0f3460;
     --text-primary: #58b4d1;
+    --on-primary: #0f3460;
 
     /* Projects section variables */
     --projects-bg: linear-gradient(135deg, var(--bg-color), var(--gray-light));
@@ -915,7 +917,7 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--on-primary);
     font-size: 1.5rem;
 }
 
@@ -933,7 +935,7 @@ textarea.form-control {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--on-primary);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -1014,7 +1016,7 @@ footer {
     display: none;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--on-primary);
     font-size: 1.5rem;
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
